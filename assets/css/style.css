@@ -496,7 +496,7 @@ textarea::-ms-input-placeholder
     color:#ecf0f2;
 }
 
-/*For About Us Section */
+/*For About Me Section */
 
 .about-content{
     margin-top:70px;
@@ -527,8 +527,6 @@ textarea::-ms-input-placeholder
 }
 .features-item h6{
     padding-top:35px;
-}
-.features-item h6 a{
     font-size: 18px;
     text-transform: uppercase;
     color:#fff;
@@ -642,6 +640,10 @@ textarea::-ms-input-placeholder
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 4px;
 }
+.heading-content h4{
+    color: white;
+}
+
 
 
 /*For Contact Section*/
