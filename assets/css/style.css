@@ -747,31 +747,7 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-.home-main-content {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-    background-color: #3a393f;
-    /* slightly visible only when we resize this element */
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-.home-main-content.move-out {
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
-    transform: scale(0.6);
-}
+
 .no-js .home-main-content {
     height: auto;
     overflow-x: auto;
@@ -779,44 +755,15 @@ Main components
 }
 
 
-
-.cd-header {
-    position: absolute;
-    top:10%;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 2;
-    -webkit-transition: background 0.2s;
-    -moz-transition: background 0.2s;
-    transition: background 0.2s;
-}
-@media only screen and (min-width: 768px) {
-    .cd-header {
-        height: 80px;
-    }
-}
-
 #cd-logo {
     position: absolute;
-    left: 10px;
-    top: 8px;
+    left: 60px;
+    top: 10%;
     width: 100px;
     height: 32px;
 }
 #cd-logo img {
     display: block;
-}
-@media only screen and (min-width: 768px) {
-    #cd-logo {
-        left: 20px;
-        top: 24px;
-    }
-}
-@media only screen and (min-width: 1170px) {
-    #cd-logo {
-        left: 60px;
-    }
 }
 
 .cd-menu-trigger {
