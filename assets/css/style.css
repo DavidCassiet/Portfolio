@@ -215,7 +215,7 @@ p:last-child {
 Section
 */
 .sections {
-    background:rgba(6, 2, 56, 0.966);
+    background:rgba(8, 4, 85, 0.966);
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -582,7 +582,7 @@ textarea::-ms-input-placeholder
 /*For Experience Section*/
 
 .experience{
-    background: url(../images/city.jpg) no-repeat center top fixed;
+    background: url(../images/programacion.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -594,7 +594,7 @@ textarea::-ms-input-placeholder
     margin-top:30px;
 }
 .experience-content{
-    background: rgba(47, 40, 146, 0.63);
+    background: rgba(47, 40, 146, 0.808);
     padding:60px 40px;
     color:#fff;
 }
