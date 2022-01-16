@@ -9,7 +9,7 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
    ========================================================================== */
 html,
 body {
-    background-color: #7af6ff23;
+    background: linear-gradient(to right, rgba(205, 241, 0, 0.24), rgba(21, 207, 21, 0.294));
     font-size: 16px;
     color:#6B6B6B;
     width: 100%;
@@ -54,7 +54,6 @@ img {
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
-    user-drag: none;
 }
 a,
 a:hover,
@@ -173,7 +172,7 @@ h6 {
 }
 p {
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 p:last-child {
     margin-bottom:0px;
@@ -215,7 +214,7 @@ p:last-child {
 Section
 */
 .sections {
-    background:rgba(8, 4, 85, 0.966);
+    background:rgba(6, 2, 56, 0.966);
     color: white;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -234,6 +233,7 @@ Section
     padding-top: 100px;
     position: relative;
     overflow: hidden;
+    color:rgb(0, 0, 0);
 }
 .sections4{
     padding-top:5px;
@@ -441,7 +441,7 @@ textarea::-ms-input-placeholder
     margin-bottom: 4rem;
 }
 .heading-content h3{
-    color: rgb(188, 200, 238);
+    color: rgb(255, 255, 255);
     font-size:40px;
     font-family: "Raleway Webfont";
     font-weight:700;
@@ -496,7 +496,7 @@ textarea::-ms-input-placeholder
     color:#ecf0f2;
 }
 
-/*For About Me Section */
+/*For About Us Section */
 
 .about-content{
     margin-top:70px;
@@ -527,6 +527,8 @@ textarea::-ms-input-placeholder
 }
 .features-item h6{
     padding-top:35px;
+}
+.features-item h6 a{
     font-size: 18px;
     text-transform: uppercase;
     color:#fff;
@@ -582,7 +584,7 @@ textarea::-ms-input-placeholder
 /*For Experience Section*/
 
 .experience{
-    background: url(../images/programacion.jpg) no-repeat center top fixed;
+    background: url(../images/city.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -594,7 +596,7 @@ textarea::-ms-input-placeholder
     margin-top:30px;
 }
 .experience-content{
-    background: rgba(47, 40, 146, 0.808);
+    background: rgba(47, 40, 146, 0.63);
     padding:60px 40px;
     color:#fff;
 }
@@ -640,10 +642,6 @@ textarea::-ms-input-placeholder
     box-shadow: 2px 2px 2px rgb(0, 0, 0);
     border-radius: 4px;
 }
-.heading-content h4{
-    color: white;
-}
-
 
 
 /*For Contact Section*/
@@ -747,7 +745,31 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-
+.home-main-content {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #3a393f;
+    /* slightly visible only when we resize this element */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.home-main-content.move-out {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
+}
 .no-js .home-main-content {
     height: auto;
     overflow-x: auto;
@@ -755,15 +777,44 @@ Main components
 }
 
 
+
+.cd-header {
+    position: absolute;
+    top:10%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+}
+@media only screen and (min-width: 768px) {
+    .cd-header {
+        height: 80px;
+    }
+}
+
 #cd-logo {
     position: absolute;
-    left: 60px;
-    top: 10%;
+    left: 10px;
+    top: 8px;
     width: 100px;
     height: 32px;
 }
 #cd-logo img {
     display: block;
+}
+@media only screen and (min-width: 768px) {
+    #cd-logo {
+        left: 20px;
+        top: 24px;
+    }
+}
+@media only screen and (min-width: 1170px) {
+    #cd-logo {
+        left: 60px;
+    }
 }
 
 .cd-menu-trigger {
