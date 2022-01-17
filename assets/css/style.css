@@ -125,6 +125,9 @@ p {
 p:last-child {
   margin-bottom: 0px;
 }
+
+/* Sections */
+
 .sections {
   background: rgb(5, 0, 47);
   color: white;
@@ -258,6 +261,9 @@ section .subtitle-half h5 {
   background: rgb(57, 142, 212);
   color: rgb(255, 255, 255);
 }
+
+/* Home */
+
 .home {
   background: url("../images/header-bg.jpg") center top / cover no-repeat fixed;
   width: 100%;
@@ -283,6 +289,9 @@ section .subtitle-half h5 {
   margin-top: 20px;
   color: rgb(236, 240, 242);
 }
+
+/* About Me */
+
 .about-content {
   margin-top: 25%;
   color: white;
@@ -294,6 +303,9 @@ section .subtitle-half h5 {
 .about-content a {
   margin-top: 40px;
 }
+
+/* Experience */
+
 .experience {
   background: url("../images/programacion.jpg") center top / cover no-repeat
     fixed;
@@ -341,6 +353,9 @@ section .subtitle-half h5 {
 #row-experience {
   width: 100%;
 }
+
+/* Portfolio */
+
 .portfolio-item {
   margin-bottom: 20px;
 }
@@ -358,8 +373,12 @@ section .subtitle-half h5 {
 .heading-content h4 {
   color: white;
 }
+
+/* Features */
+
 #features {
   padding: 120px 0px;
+
 }
 .features-bg {
   color: rgb(255, 255, 255);
@@ -403,28 +422,28 @@ section .subtitle-half h5 {
   background: rgb(246, 48, 131);
 }
 #social-network {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-.features-wrapper {
   display: flex;
   justify-content: center;
+  padding: 0;
+}
+.features-wrapper {
   width: 100%;
 }
 #bgnetwork {
   display: inline-block;
-  float: left;
+  padding: 15px;
   width: 250px;
 }
 #test-div {
-  width: 65%;
+  width: 100%;
+  margin: 0 auto;
   float: left;
 }
-#test-div2 {
-  display: inline-block;
-  width: 30%;
-  padding: 30px 0px 0px;
+
+/* Contact */
+
+.contact-wrapper{
+  justify-content: center;
 }
 .contact-wrapper h4 {
   color: rgb(255, 255, 255);
@@ -434,13 +453,15 @@ section .subtitle-half h5 {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.contact-details-area {
-  width: 480px;
+.contact-details-area{
+  display: inline-block;
+  width: 400px;
 }
 .contact-details {
   background: rgba(47, 40, 146, 0.706);
   padding: 60px 40px;
   color: rgb(255, 255, 255);
+  border-radius: 16px;
 }
 .contact-details h4 {
   margin-bottom: 25px;
@@ -449,6 +470,9 @@ section .subtitle-half h5 {
   margin: 0px 0px 10px;
   color: rgb(195, 190, 194);
 }
+
+/* Footer */
+
 .main-footer .social {
   margin-bottom: 10px;
 }
@@ -470,36 +494,15 @@ section .subtitle-half h5 {
   color: rgb(195, 190, 194);
   font-size: 12px;
 }
-.cd-container {
-  width: 90%;
-  max-width: 768px;
-  margin: 0px auto;
-}
-.cd-container::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+/* Others */
+
 .no-js .home-main-content {
   height: auto;
   overflow: auto;
 }
-#cdddd-logo {
+#cd-logo {
   width: 200px;
   display: block;
   margin: 0px auto;
-}
-.cd-menu-trigger {
-  display: inline-block;
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  height: 50px;
-  width: 50px;
-  line-height: 50px;
-  padding: 0px 0.8em;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.875rem;
-  border: 2px solid rgb(237, 237, 237);
 }
