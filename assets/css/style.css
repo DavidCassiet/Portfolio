@@ -497,11 +497,8 @@ section .subtitle-half h5 {
 
 /* Others */
 
-.no-js .home-main-content {
-  height: auto;
-  overflow: auto;
-}
-#cd-logo {
+
+#davidcassiet-logocontainer {
   width: 200px;
   display: block;
   margin: 0px auto;
