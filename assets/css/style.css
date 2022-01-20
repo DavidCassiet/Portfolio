@@ -345,14 +345,39 @@ section .subtitle-half h5 {
   padding-bottom: 30px;
   margin-bottom: 30px;
 }
-.experience .container {
+.img-experience-container{
+  margin: auto;
+  text-align: center;
+}
+.img-experience-experience{
+  display: inline-block;
+}
+.img-experience{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 162px;
+  width: 150px;
+  padding: 10px;
+}
+.experience-logo{
+  display: block;
+}
+#python-logo,
+#html-logo,
+#css-logo,
+#javascript-logo{
+  width: 100px;
+  margin: auto;
+}
+/* .experience .container {
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
 }
 #row-experience {
   width: 100%;
-}
+} */
 
 /* Portfolio */
 
