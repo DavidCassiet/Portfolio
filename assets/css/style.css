@@ -398,6 +398,14 @@ section .subtitle-half h5 {
 .heading-content h4 {
   color: white;
 }
+#portfolio >.container{
+  background-color: rgb(7, 1, 63);
+  margin-bottom: 20px;
+  padding-top: 10px;
+  border: PowderBlue 5px solid;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
 
 /* Features */
 
