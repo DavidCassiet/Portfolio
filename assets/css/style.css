@@ -250,7 +250,7 @@ section .subtitle-half h5 {
   color: rgb(255, 255, 255);
   background-color: rgb(57, 67, 212);
   border: 0px;
-  border-radius: 0px;
+  border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 8px;
   padding: 10px 60px;
   font-size: 20px;
